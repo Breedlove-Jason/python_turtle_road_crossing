@@ -16,7 +16,7 @@ class Cars(Turtle):
         self.random_y = random.randint(-250, 250)
 
     def move(self):
-        self.forward(10)
+        self.forward(11)
 
     def gen_cars(self):
         for cars in range(9):

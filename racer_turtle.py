@@ -6,7 +6,7 @@ class RacerTurtle(Turtle):
         super().__init__()
         self.color("black")
         self.shape("turtle")
-        self.shapesize(stretch_wid=2, stretch_len=2)
+        self.shapesize(stretch_wid=1, stretch_len=1)
         self.penup()
         self.goto(x, y)
         self.setheading(90)

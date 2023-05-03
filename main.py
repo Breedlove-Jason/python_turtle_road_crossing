@@ -12,8 +12,6 @@ racer_turtle = RacerTurtle(0, -280)
 
 car = Cars()
 car.gen_cars()
-# for cars in range(9):
-#     car = Cars()
 
 game_is_on = True
 while game_is_on:
