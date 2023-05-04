@@ -14,13 +14,24 @@ class Cars(Turtle):
         self.goto(random.randint(-250, 250), random.randint(-250, 250))
         self.random_x = random.randint(-250, 250)
         self.random_y = random.randint(-250, 250)
+        self.car_list = []
 
     def move(self):
-        self.forward(11)
+        for car in self.car_list:
+            car.forward(-10)
 
     def gen_cars(self):
         for cars in range(9):
             cars = Cars()
-            cars.move()
+            self.car_list.append(cars)
+            # cars.move()
             if cars.distance(self.random_x, self.random_y) < 100:
+                self.car_list.remove(cars)
+                cars = Cars()
+                self.car_list.append(cars)
                 cars.goto(self.random_x, self.random_y)
+
+                # if self.random_x > 250:
+                #     cars = Cars()
+                #     self.car_list.append(cars)
+                #     cars.goto(-250, self.random_y)
