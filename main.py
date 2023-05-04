@@ -4,7 +4,7 @@ from car_manager import CarManager
 from scoreboard import Scoreboard
 import time
 
-NUM_CARS = 5
+NUM_CARS = 7
 CAR_SPEED = 10
 
 screen = Screen()
@@ -19,7 +19,6 @@ score = Scoreboard()
 
 for _ in range(NUM_CARS):
     car_manager.generate_new_car()
-
 
 game_is_on = True
 while game_is_on:
