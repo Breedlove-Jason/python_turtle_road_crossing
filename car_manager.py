@@ -17,4 +17,4 @@ class CarManager:
 
     def move_cars(self):
         for car in self.car_list:
-            car.forward(-10)
+            car.forward(10)
