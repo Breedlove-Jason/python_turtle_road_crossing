@@ -6,6 +6,7 @@ class CarManager:
     def __init__(self):
         self.car_list = []
         self.car_spacing = 100
+        self.car_speed = 10
 
     def generate_new_car(self, x=None, y=None):
         new_car = Cars()
@@ -27,5 +28,5 @@ class CarManager:
 
     def move_cars(self):
         for car in self.car_list:
-            car.forward(10)
+            car.forward(self.car_speed)
             self.check_car_position(car)

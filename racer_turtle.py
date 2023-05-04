@@ -18,5 +18,8 @@ class RacerTurtle(Turtle):
         self.setheading(90)
         self.forward(10)
 
+    def stop_turtle(self):
+        self.setheading(90)
+
     def reset_position(self):
         self.goto(0, -280)
