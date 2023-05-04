@@ -8,12 +8,12 @@ screen.setup(width=600, height=600)
 screen.bgcolor("white")
 screen.title("Turtle Crossing Game")
 # screen.tracer(0)
-
+NUM_CARS = 11
 racer_turtle = RacerTurtle(0, -280)
 
 car_manager = CarManager()
 
-for _ in range(11):
+for _ in range(NUM_CARS):
     car_manager.generate_new_car()
 
 game_is_on = True
